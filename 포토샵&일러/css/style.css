@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
@@ -80,15 +80,54 @@ a{
     color: #ffffff;
 }
 
-/* 일러스트 사진 */
-
-
-.album {
+/* 작품 */
+.album-flex {
     display: flex;
-    flex: 0 1 auto;
+    flex-wrap: wrap;
 }
 
-.img-item {
-    width: 380.5px;
-    height: 369px;
+.album-flex .album {
+    width: calc(98% / 1 );
+    margin: 0%;
+    cursor: pointer;
+    transition: all 0.5s;
+    height: 318px;
+}
+
+.img-box {
+    max-height: auto;
+}
+
+.album-flex .album img { 
+    width: 100%;
+    z-index: 3;
+    height: 318px;
+}
+
+.album-flex .album img:hover {
+    transition: all 0.8s;
+    transform: scale(1.15);
+}
+
+/* 반응형 */
+
+/* 모바일 (가로) */
+@media (min-width: 480px) {
+    .album-flex .album {
+        width: calc(100% / 1 );
+    }
+}
+
+/* 태블릿 */
+@media (min-width: 768px) {
+    .album-flex .album {
+        width: calc(100% / 4);
+    }
+}
+
+/* PC */
+@media (min-width: 1200px) {
+    .album-flex .album {
+        width: calc(100% / 5);
+    }
 }
