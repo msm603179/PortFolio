@@ -5,7 +5,7 @@ a {
     color: black;
 }
 
-/* Header */
+/* HEADER */
 nav h1 { 
     float:left; 
     font-size: 5em;
@@ -32,34 +32,76 @@ nav li{
     font-weight: bold;
 }
 
-/* Main */
+.menu img {
+    width: 19.7px;
+    height: 19px;
+}
+
+/* MAIN */
 .main img {
     width: 100%;
 }
 
-/* BIOGRAPHY */
-.biography h1 {
-    margin-top: 60px;
+/* ALBUM */
+.album h1 {
+    margin-top: 80px;
     margin-left: 70px;
     font-size: 3em;
 }
 
-.biography li {
-    margin-left: 100px;
+/* PHOTO */
+.photo h1 {
+    margin-top: 80px;
+    margin-left: 70px;
+    font-size: 3em;
+}
+
+/* BIOGRAPHY */
+.biography h1 {
+    margin-top: 80px;
+    margin-left: 70px;
+    font-size: 3em;
+}
+
+.biography ul {
     margin-top: 20px;
+}
+
+.biography li {
     height: 100px;
     width: 150px;
     display: inline-block;
+    margin-left: 100px;
 }
 
-/* Video */
+/* VIDEO */
+.video h1 {
+    margin-top: 80px;
+    margin-left: 70px;
+    font-size: 3em;
+}
 
-/* Footer */
+.video ul {
+    margin-top: 20px;
+}
+
+/* FOOTER */
 .footer {
+    margin-top: 80px;
     text-align: center;
 }
 
 .footer li {
     display: inline-block;
     padding: 0 10px;
+}
+
+.footer img {
+    width: 19.7px;
+    height: 19px;
+}
+
+.footer p {
+    font-weight: bold;
+    margin-top: 20px;
 }
