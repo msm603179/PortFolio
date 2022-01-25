@@ -1,0 +1,119 @@
+* { margin: 0; padding: 0; }
+
+.wrap {
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+header #gnbLogo {
+    width: 240px;
+    height: 90px;
+    background: url(../img/logo.png) no-repeat left center;
+    background-size: auto 90px;
+    text-indent: -9999px;
+}
+
+header #gnbLogo a {
+    display: block;
+    height: 100%;
+}
+
+nav ul.gnb {
+    list-style-type: none;
+    height: 90px;
+}
+
+nav ul.gnb li {
+    display: inline-block;
+    height: 90px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+nav ul.gnb li a:hover {
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+    padding-bottom: 8px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+
+.category {
+    height: 90px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+* { margin: 0; padding: 0;}
+
+.wrap { 
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    left: -200px;
+    height: 100%;
+    overflow: auto;
+    transition: all 1s ease-in-out;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: royalblue;
+    color: white;
+}
+
+/* :not(선택자) - 가상선택자 - 선택자를 제외하고 선택 */
+.sidebar a:hover:not(.active) {
+    background-color: cornflowerblue;
+    color: white;
+}
+.content { 
+    margin-left: 200px;
+    padding: 10px 20px;
+    height: 1000px;
+}
+
+input[name='category'] {
+    display: none;
+}
+
+/* category 를 체크했을 때, 사이드바 슬라이드 */
+input#category:checked ~ .sidebar {
+    left: 0%;
+}
+
+.btn {
+    cursor: pointer;
+}

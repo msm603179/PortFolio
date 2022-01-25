@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 배달의민족 도현체 -->
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <!-- 폰트어썸 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/01_flex-header.css">
+    <link rel="stylesheet" href="css/01_slidebar.css">
+    <link rel="stylesheet" href="css/02_img_slide_vertical.css">
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1 id="gnbLogo">
+                <a href="https://sbsart.com">SBS아카데미컴퓨터아트학원</a>
+            </h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">아카데미 소개</a></li>
+                    <li><a href="#">교육 과정</a></li>
+                    <li><a href="#">포트폴리오</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <div class="category">
+                <label for="category" class="btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    카테고리
+                </label>
+            </div>
+        </header>
+
+        <!-- sidebar -->
+        <input type="checkbox" id="category" name="category" />
+        <div class="sidebar">
+            <a href="#" class="active">WEB 1</a>
+            <a href="#" >WEB 2</a>
+            <a href="#" >WEB 3</a>
+            <a href="#" >웹 포트폴리오</a>
+        </div>
+
+        <!-- slide -->
+        <section class="slide">
+            <div class="inner">
+                <ul>
+                    <li><img src="img/slide01.jpg" alt="슬라이드01"></li>
+                    <li><img src="img/slide02.jpg" alt="슬라이드02"></li>
+                    <li><img src="img/slide03.jpg" alt="슬라이드03"></li>
+                </ul>
+            </div>
+        </section>
+        
+    </div>
+</body>
+</html>

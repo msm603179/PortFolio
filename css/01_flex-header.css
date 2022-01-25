@@ -1,0 +1,65 @@
+* { margin: 0; padding: 0; }
+
+.wrap {
+    width: 1400px;
+    height: 900px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+header #gnbLogo {
+    width: 240px;
+    height: 90px;
+    background: url(../img/logo.png) no-repeat left center;
+    background-size: auto 90px;
+    text-indent: -9999px;
+}
+
+header #gnbLogo a {
+    display: block;
+    height: 100%;
+}
+
+nav ul.gnb {
+    list-style-type: none;
+    height: 90px;
+}
+
+nav ul.gnb li {
+    display: inline-block;
+    height: 90px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+nav ul.gnb li a:hover {
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+    padding-bottom: 8px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+
+.category {
+    height: 90px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: cornflowerblue;
+    color: white;
+}
