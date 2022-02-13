@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 레이아웃 템플릿</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- 전체영역 : wrap -->
+    <div id="wrap">
+
+        <!-- 퀵메뉴 -->
+        <!-- 플로팅 버튼 -->
+
+        <!-- 헤더 -->
+        <header id="header" class="header inner-box">
+            <!-- 로그인/회원가입 -->
+            <div class="user flex flex-end align-items-center">
+                <ul class="util flex">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+
+            <!-- 로고/GNB -->
+            <div class="info flex flex-between align-items-center">
+                <h1><a href="#">Logo</a></h1>
+
+                <nav>
+                    <ul class="gnb flex pc">
+                        <li>
+                            <a href="#">MENU 01</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUB MENU 01</a></li>
+                                <li><a href="#">SUB MENU 02</a></li>
+                                <li><a href="#">SUB MENU 03</a></li>
+                                <li><a href="#">SUB MENU 04</a></li>
+                            </ul>
+                        </li>   
+                        <li>
+                            <a href="#">MENU 02</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUB MENU 01</a></li>
+                                <li><a href="#">SUB MENU 02</a></li>
+                                <li><a href="#">SUB MENU 03</a></li>
+                                <li><a href="#">SUB MENU 04</a></li>
+                            </ul>
+                        </li>   
+                        <li>
+                            <a href="#">MENU 03</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUB MENU 01</a></li>
+                                <li><a href="#">SUB MENU 02</a></li>
+                                <li><a href="#">SUB MENU 03</a></li>
+                                <li><a href="#">SUB MENU 04</a></li>
+                            </ul>
+                        </li>   
+                        <li>
+                            <a href="#">MENU 04</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUB MENU 01</a></li>
+                                <li><a href="#">SUB MENU 02</a></li>
+                                <li><a href="#">SUB MENU 03</a></li>
+                                <li><a href="#">SUB MENU 04</a></li>
+                            </ul>
+                        </li>   
+                    </ul>
+
+                    <!-- 모바일 햄버거 메뉴 -->
+                    <div class="mobile-gnb-box mobile">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+
+                </nav>
+            </div>
+
+
+        </header>
+
+        <!-- 메인 -->
+        <main>
+            <!-- 섹션 -->
+            <section class="visual">
+                <div class="title inner-box flex flex-around">
+                    <div class="title-content"></div>
+                    <div class="main-img"></div>
+                </div>
+            </section>
+
+            <!-- 섹션 -->
+            <section class="inner-box">
+                <!-- 타이틀 영역 -->
+                <div class="section-title flex flex-center align-items-center">
+                    <h2>New Arrivals</h2>
+                </div>
+                <!-- 카테고리 영역 -->
+                <div class="section-cate flex flex-center align-items-center">
+                    <div class="inner flex flex-center align-items-center flex-wrap">
+                        <a href="#"><span>OUTER</span></a>
+                        <a href="#"><span>TOP</span></a>
+                        <a href="#"><span>KNIT</span></a>
+                        <a href="#"><span>SHIRT</span></a>
+                        <a href="#"><span>BOTTOM</span></a>
+                        <a href="#"><span>SHOES</span></a>
+                        <a href="#"><span>ACC</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 섹션 - 상품목록 -->
+            <section class="product-list inner-box">
+                <div class="inner flex flex-start flex-wrap">
+                    <div class="card">
+                        <img src="img/product.png" alt="">
+                        <div class="card-content">
+                            <h2>상품 이름</h2>
+                            <p>상품 설명입니다.</p>
+                            <p class="discount">
+                                <span class="throw">\ 100,000</span>
+                                <span class="percent">50%</span>
+                            </p>
+                            <p class="price">\ 50,000</p>
+                            <p class="colors">
+                                <span class="red"></span>
+                                <span class="green"></span>
+                                <span class="blue"></span>
+                                <span class="yellow"></span>
+                                <span class="purple"></span>
+                                <span class="hotpink"></span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off">XS</span>
+                                <span class="on">S</span>
+                                <span class="off">M</span>
+                                <span class="on">L</span>
+                                <span class="off">XL</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product.png" alt="">
+                        <div class="card-content">
+                            <h2>상품 이름</h2>
+                            <p>상품 설명입니다.</p>
+                            <p class="discount">
+                                <span class="throw">\ 100,000</span>
+                                <span class="percent">50%</span>
+                            </p>
+                            <p class="price">\ 50,000</p>
+                            <p class="colors">
+                                <span class="red"></span>
+                                <span class="green"></span>
+                                <span class="blue"></span>
+                                <span class="yellow"></span>
+                                <span class="purple"></span>
+                                <span class="hotpink"></span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off">XS</span>
+                                <span class="on">S</span>
+                                <span class="off">M</span>
+                                <span class="on">L</span>
+                                <span class="off">XL</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product.png" alt="">
+                        <div class="card-content">
+                            <h2>상품 이름</h2>
+                            <p>상품 설명입니다.</p>
+                            <p class="discount">
+                                <span class="throw">\ 100,000</span>
+                                <span class="percent">50%</span>
+                            </p>
+                            <p class="price">\ 50,000</p>
+                            <p class="colors">
+                                <span class="red"></span>
+                                <span class="green"></span>
+                                <span class="blue"></span>
+                                <span class="yellow"></span>
+                                <span class="purple"></span>
+                                <span class="hotpink"></span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off">XS</span>
+                                <span class="on">S</span>
+                                <span class="off">M</span>
+                                <span class="on">L</span>
+                                <span class="off">XL</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product.png" alt="">
+                        <div class="card-content">
+                            <h2>상품 이름</h2>
+                            <p>상품 설명입니다.</p>
+                            <p class="discount">
+                                <span class="throw">\ 100,000</span>
+                                <span class="percent">50%</span>
+                            </p>
+                            <p class="price">\ 50,000</p>
+                            <p class="colors">
+                                <span class="red"></span>
+                                <span class="green"></span>
+                                <span class="blue"></span>
+                                <span class="yellow"></span>
+                                <span class="purple"></span>
+                                <span class="hotpink"></span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off">XS</span>
+                                <span class="on">S</span>
+                                <span class="off">M</span>
+                                <span class="on">L</span>
+                                <span class="off">XL</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product.png" alt="">
+                        <div class="card-content">
+                            <h2>상품 이름</h2>
+                            <p>상품 설명입니다.</p>
+                            <p class="discount">
+                                <span class="throw">\ 100,000</span>
+                                <span class="percent">50%</span>
+                            </p>
+                            <p class="price">\ 50,000</p>
+                            <p class="colors">
+                                <span class="red"></span>
+                                <span class="green"></span>
+                                <span class="blue"></span>
+                                <span class="yellow"></span>
+                                <span class="purple"></span>
+                                <span class="hotpink"></span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off">XS</span>
+                                <span class="on">S</span>
+                                <span class="off">M</span>
+                                <span class="on">L</span>
+                                <span class="off">XL</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product.png" alt="">
+                        <div class="card-content">
+                            <h2>상품 이름</h2>
+                            <p>상품 설명입니다.</p>
+                            <p class="discount">
+                                <span class="throw">\ 100,000</span>
+                                <span class="percent">50%</span>
+                            </p>
+                            <p class="price">\ 50,000</p>
+                            <p class="colors">
+                                <span class="red"></span>
+                                <span class="green"></span>
+                                <span class="blue"></span>
+                                <span class="yellow"></span>
+                                <span class="purple"></span>
+                                <span class="hotpink"></span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off">XS</span>
+                                <span class="on">S</span>
+                                <span class="off">M</span>
+                                <span class="on">L</span>
+                                <span class="off">XL</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product.png" alt="">
+                        <div class="card-content">
+                            <h2>상품 이름</h2>
+                            <p>상품 설명입니다.</p>
+                            <p class="discount">
+                                <span class="throw">\ 100,000</span>
+                                <span class="percent">50%</span>
+                            </p>
+                            <p class="price">\ 50,000</p>
+                            <p class="colors">
+                                <span class="red"></span>
+                                <span class="green"></span>
+                                <span class="blue"></span>
+                                <span class="yellow"></span>
+                                <span class="purple"></span>
+                                <span class="hotpink"></span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off">XS</span>
+                                <span class="on">S</span>
+                                <span class="off">M</span>
+                                <span class="on">L</span>
+                                <span class="off">XL</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product.png" alt="">
+                        <div class="card-content">
+                            <h2>상품 이름</h2>
+                            <p>상품 설명입니다.</p>
+                            <p class="discount">
+                                <span class="throw">\ 100,000</span>
+                                <span class="percent">50%</span>
+                            </p>
+                            <p class="price">\ 50,000</p>
+                            <p class="colors">
+                                <span class="red"></span>
+                                <span class="green"></span>
+                                <span class="blue"></span>
+                                <span class="yellow"></span>
+                                <span class="purple"></span>
+                                <span class="hotpink"></span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off">XS</span>
+                                <span class="on">S</span>
+                                <span class="off">M</span>
+                                <span class="on">L</span>
+                                <span class="off">XL</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/product.png" alt="">
+                        <div class="card-content">
+                            <h2>상품 이름</h2>
+                            <p>상품 설명입니다.</p>
+                            <p class="discount">
+                                <span class="throw">\ 100,000</span>
+                                <span class="percent">50%</span>
+                            </p>
+                            <p class="price">\ 50,000</p>
+                            <p class="colors">
+                                <span class="red"></span>
+                                <span class="green"></span>
+                                <span class="blue"></span>
+                                <span class="yellow"></span>
+                                <span class="purple"></span>
+                                <span class="hotpink"></span>
+                            </p>
+                            <p class="sizes">
+                                <span class="off">XS</span>
+                                <span class="on">S</span>
+                                <span class="off">M</span>
+                                <span class="on">L</span>
+                                <span class="off">XL</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 섹션 - 기타 -->
+            <section class="etc inner-box">
+                <div class="box clear flex flex-center">
+                    <div class="col left"></div>
+                    <div class="col right"></div>
+                    <div class="col bottom"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 푸터 -->
+        <footer class="inner-box">
+                <div class="fnb flex flex-center align-items-center">
+                    <ul class="flex flex-between">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </div>
+
+                <div class="box flex flex-around">
+                    <div class="col flex flex-center align-items-center">
+                        <h1 class="footer-logo"><a href="#">Logo</a></h1>
+                    </div>
+                    <div class="col flex flex-center align-items-center">
+                        <p class="copy">copyright</p>
+                    </div>
+                    <div class="col">
+                        <ul class="sns flex flex-around align-items-center">
+                            <li><img src="img/facebook.png" alt="" width="30"></li>
+                            <li><img src="img/instagram.png" alt="" width="30"></li>
+                            <li><img src="img/blog.png" alt="" width="30"></li>
+                            <li><img src="img/cafe.png" alt="" width="30"></li>
+                        </ul>
+                    </div>
+                </div>
+            
+        </footer>
+
+    </div>
+
+</body>
+</html>
