@@ -59,6 +59,7 @@ nav li{
 
 .album div li{
     float: left;
+    width: 475.5px;
     width: calc(100/4);
 }
 
@@ -73,6 +74,21 @@ nav li{
     font-size: 3em;
 }
 
+.photo div ul {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+}
+
+.photo div li{
+    float: left;
+    width: 475.5px;
+    width: calc(100/4);
+}
+
+.photo div li img {
+    width: 100%;
+}
 /* BIOGRAPHY */
 .biography h1 {
     margin-top: 80px;
@@ -101,6 +117,7 @@ nav li{
 .video ul {
     margin-top: 20px;
 }
+
 
 /* FOOTER */
 .footer {
