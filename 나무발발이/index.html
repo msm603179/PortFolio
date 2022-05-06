@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Fixed headers - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords" content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+
+	<script src="js/jquery-1.12.3.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/index.js" type="text/javascript" defer="defer"></script>
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/header.css">
+
+	<style>
+		/* Style for our header texts
+	* --------------------------------------- */
+		h1 {
+			font-size: 5em;
+			font-family: arial, helvetica;
+			color: #fff;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Centered texts in each section
+	* --------------------------------------- */
+		.section{
+			text-align:center;
+		}
+
+
+		/* Backgrounds will cover all the section
+	* --------------------------------------- */
+		#section0,
+		#section1,
+		#section2,
+		#section3,
+		#slide1,
+		#slide2 {
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		/* Defining each sectino background and styles
+	* --------------------------------------- */
+		#section0 {
+			background-image: url(img/main1.png);
+		}
+
+		#section1 {
+			background-image: url(img/main2bg.png);
+			padding: 6% 0 0 0;
+		}
+
+		#section2 {
+			background-image: url(img/main3bg.png);
+			padding: 6% 0 0 0;
+		}
+
+
+
+		/*Adding background for the slides
+	* --------------------------------------- */
+		#slide1 {
+			background-image: url(img/main4bg.png);
+			padding: 4% 0 0 0;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- HEADER -->
+	<div id="header">
+		<header>
+			<h1 id="gnbLogo">
+				<a href="index.html"></a>
+			</h1>
+			<nav>
+				<ul class="gnb">
+					<li><a href="ABOUT US.html">ABOUT US</a></li>
+					<li><a href="PRODUCT.html">PRODUCT</a></li>
+					<li><a href="#">COMMUNITY</a></li>
+					<li><a href="https://company.lottechilsung.co.kr/kor/main/index.do" target="_blank">COMPANY</a></li>
+				</ul>
+			</nav>
+			<ul class="shop">
+				<a href="https://mall.lottechilsung.co.kr/display/displayShop.lecs?displayNo=CF1A07A01&stonType=P" target="_blank">
+				<li>
+					<div class="shopicon"><img src="img/header_shop.png" alt=""></div>
+				</li>
+				<li>
+					<div class="shoptext">SHOP</div>
+				</li>
+				<li>
+					<div class="shopright"><img src="img/header_right.png" alt=""></div>
+				</li>
+			</a>
+			</ul>
+		</header>
+	</div>
+
+
+	<div id="fullpage">
+
+
+		<div class="section " id="section0">
+			
+			<!-- SCROLL-MOUSE -->
+			<div class="scroll-downs">
+				<div class="mousey">
+					<div class="scroller"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="section1">
+			<div class="textgloup">
+			<p class="textsub">머리속 솔잎 샤워 느낌</p>
+			<p class="textimg"><img src="img/logo_gr.png" alt=""></p>
+			<i class="textlast">Pine bud Drink</i>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="textgloup2">
+				<p class="textsub2">머리까지 상쾌해지는 느낌</p>
+				<p class="textimg2"><img src="img/logo_gr.png" alt=""></p>
+				<p class="textspark"><img src="img/스파클링폰트.png" alt=""></p>
+				<img class="goods" src="img/솔의눈 탄산 250 물방울 png.png" alt="">
+			</div>
+		</div>
+		<div class="section" id="section3">
+			
+			<div class="slide" id="slide1"><img src="img/media1.png" alt=""><img class="play1" src="img/play.png" alt=""></div>
+			<div class="slide" id="slide1"><img src="img/media2.png" alt=""><img class="play2" src="img/play.png" alt=""></div>
+			<div class="slide" id="slide1"><img src="img/media3.png" alt=""><img class="play3" src="img/play.png" alt=""></div>
+			
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/fullpage.js"></script>
+
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			anchors: ['firstPage', 'secondPage', '3rdPage'],
+			sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+			css3: true
+		});
+	</script>
+	
+</body>
+
+</html>

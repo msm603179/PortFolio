@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/aboutus.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<style>
+		.swiper {
+			width: 1500px;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- HEADER -->
+	<div id="header">
+		<header>
+			<h1 id="gnbLogo">
+				<a href="index.html"></a>
+			</h1>
+			<nav>
+				<ul class="gnb">
+					<li><a href="ABOUT US.html">ABOUT US</a></li>
+					<li><a href="PRODUCT.html">PRODUCT</a></li>
+					<li><a href="#">COMMUNITY</a></li>
+					<li><a href="https://company.lottechilsung.co.kr/kor/main/index.do" target="_blank">COMPANY</a></li>
+				</ul>
+			</nav>
+			<ul class="shop">
+				<a href="https://mall.lottechilsung.co.kr/display/displayShop.lecs?displayNo=CF1A07A01&stonType=P"
+					target="_blank">
+					<li>
+						<div class="shopicon"><img src="img/header_shop.png" alt=""></div>
+					</li>
+					<li>
+						<div class="shoptext">SHOP</div>
+					</li>
+					<li>
+						<div class="shopright"><img src="img/header_right.png" alt=""></div>
+					</li>
+				</a>
+			</ul>
+		</header>
+	</div>
+
+	<div><img src="img/about us_main.png" alt=""></div>
+	<div class="history">
+		<div class="inner">
+			<p class="tit">브랜드 히스토리</p>
+		</div>
+		<!-- Swiper -->
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/솔의눈 1995.png" alt="">
+					<div class="text">1995</div>
+					<div class="text2">CJ제일제당 솔의눈 출시</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/솔의눈 2000.png" alt="">
+					<div class="text">2000</div>
+					<div class="text2">CJ제일제당 솔의눈 출시</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/솔의눈 2004.png" alt="">
+					<div class="text">2004</div>
+					<div class="text2">CJ제일제당 솔의눈 출시</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/솔의눈 2008.png" alt="">
+					<div class="text">2008</div>
+					<div class="text2">CJ제일제당 솔의눈 출시</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/솔의눈 2016.png" alt="">
+					<div class="text">2016</div>
+					<div class="text2">CJ제일제당 솔의눈 출시</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/솔의눈 2022.png" alt="">
+					<div class="text">2022</div>
+					<div class="text2">CJ제일제당 솔의눈 출시</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
+	</div>
+
+	<!-- package -->
+	<div class="package">
+		<div class="inner">
+			<p class="tit">패키지</p>
+		</div>
+	</div>
+</body>
+
+</html>
