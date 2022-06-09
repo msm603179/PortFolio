@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MAIN</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords" content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+
+	<!-- fullpage / css -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/Detailedheader.css">
+	<link rel="stylesheet" href="css/product.css">
+	<link rel="stylesheet" href="css/footer.css">
+
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/product.js"></script>
+	
+	<!-- fullpage / js -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			// 1. 풀페이지를 적용할 선택자 지정
+			$('#fullpage').fullpage({
+
+				// 2. 옵션 지정
+				// 스크롤 속도
+				scrollingSpeed: 500,
+				// 스크롤바 여부
+				scrollBar: false,
+				// 키보드 사용 여부
+				keyboardScrolling: true,
+				// 네비게이션 여부
+				navigation: true,
+				// 네비게이션 위치
+				navigationPosition: 'right',
+
+				// 페이지 내 슬라이드 화살표 여부
+				controlArrows: true,
+
+				// 이벤트
+				// 페이지 이동 시
+				onLeave: function (origin, destination, direction) {
+					console.log('onLeave : 페이지 이동');
+					// origin 		: 이동 전 페이지
+					// destination	: 이동 후 페이지
+					// direction	: 방향	(up/down)
+					console.log('origin: ' + origin + ' / destination: ' + destination + " / direction: " + direction);
+
+
+				},
+
+				afterRender: function () { },
+				afterResize: function (width, height) { },
+				afterReBuild: function () { },
+				afterResponsive: function (isResponsive) { },
+				// 페이지 내 슬라이드 로드 후
+				afterSlideLoad: function (section, origin, destination, direction) { },
+				// 페이지 내 슬라이드 이동 시
+				onSlideLeave: function (section, origin, destination, direction) { }
+
+
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<div id="header">
+		<header>
+			<a href="index.html"><h1 id="gnbLogo"></h1></a>
+			
+			<nav>
+				<ul class="gnb">
+					<li><a href="ABOUT US.html">ABOUT US</a></li>
+					<li><a href="PRODUCT.html">PRODUCT</a></li>
+					<li><a href="#">COMMUNITY</a></li>
+					<li><a href="https://company.lottechilsung.co.kr/kor/main/index.do" target="_blank">COMPANY</a></li>
+				</ul>
+			</nav>
+			<ul class="shop">
+				<a href="https://mall.lottechilsung.co.kr/display/displayShop.lecs?displayNo=CF1A07A01&stonType=P"
+					target="_blank">
+					<li>
+						<div class="shopicon"><img src="img/header_shop.png" alt=""></div>
+					</li>
+					<li>
+						<div class="shoptext">SHOP</div>
+					</li>
+					<li>
+						<div class="shopright"><img src="img/header_right.png" alt=""></div>
+					</li>
+				</a>
+			</ul>
+		</header>
+	</div>
+
+	<div id="fullpage">
+		<div class="section active" id="section0">
+		</div>
+
+		<!-- 자동높이 -->
+		<div class="section" id="section1">
+			<div class="container">
+				<div class="contit">솔의눈</div>
+				<div class="contitsub">솔싹 추출물 음료</div>
+				<div class="sol"><img src="img/솔의눈 250 png.png" alt=""></div>
+			</div>
+		</div>
+
+		<div class="section" id="section2">
+			
+		</div>
+
+			
+	</div>
+
+	<!-- footer -->
+		<footer class="section fp-auto-height" id="section3">
+			<div class="box">
+				<!-- footer -->
+				<div class="footer">
+					<div>
+						<footer>
+							<p><img src="img/footer_logo.png" alt=""></p>
+							<nav>
+								<ul class="utill">
+									<li><a href="https://company.lottechilsung.co.kr/kor/util/terms/contentsid/567/index.do"
+											target="_blank">이용약관&nbsp</a></li>
+									<li class="point"><a
+											href="https://company.lottechilsung.co.kr/kor/util/privacy/view.do"
+											target="_blank">&nbsp·&nbsp&nbsp&nbsp개인정보처리방침&nbsp</a></li>
+									<li><a href="https://company.lottechilsung.co.kr/kor/util/movie/contentsid/861/index.do"
+											target="_blank">&nbsp·&nbsp&nbsp&nbsp영상정보처리기기운영·관리방침&nbsp</a></li>
+									<li><a href="https://mall.lottechilsung.co.kr/display/displayShop.lecs?displayNo=CF1A07A01&stonType=P"
+											target="_blank">&nbsp·&nbsp&nbsp&nbsp롯데칠성몰&nbsp</a></li>
+									<li><a href="https://company.lottechilsung.co.kr/kor/management/sinmungo/report/guide.do"
+											target="_blank">&nbsp·&nbsp&nbsp&nbsp신문고&nbsp</a></li>
+									<li><a href="https://company.lottechilsung.co.kr/kor/util/sitemap/contentsid/569/index.do"
+											target="_blank">&nbsp·&nbsp&nbsp&nbsp사이트맵&nbsp</a></li>
+								</ul>
+							</nav>
+							<p class="inpo"><span>서울특별시 송파구 올림픽로 269 롯데캐슬골드 5층 | TEL : 02-3479-9114 | FAX : 02-536-9767
+									| 대표이사 :
+									박윤기</span></p>
+							<p class="copy"><span>Copyright&copy;2018 LOTTE CHILSUNG BEVERAGE CO.,LTD. ALL RIGHTS
+									RESERVED</span>
+							</p>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+</body>
+
+</html>
+

@@ -4,6 +4,7 @@
   display: block;
   width: 100%;
   z-index: 9;
+  
 }
 
 header {
@@ -35,7 +36,7 @@ nav ul.gnb {
 nav ul.gnb li {
   display: inline-block;
   height: 90px;
-  padding-top: 32px;
+  padding-top: 35px;
   padding-left: 100px;
   padding-right: 100px;
   font-size: 20px;

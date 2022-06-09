@@ -1,52 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/aboutus.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ABOUT US</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords" content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+
+	<!-- fullpage / css -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+	<!-- css -->
+	<link rel="stylesheet" href="css/Detailedheader.css">
+	<link rel="stylesheet" href="css/about us.css">
+	<link rel="stylesheet" href="css/footer.css">
+
+	<!-- swiper -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<style>
-		.swiper {
-			width: 1500px;
-			height: 100%;
-		}
+	
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/about us.js"></script>
 
-		.swiper-slide {
-			/* Center slide text vertically */
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-			display: flex;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
-			-webkit-justify-content: center;
-			justify-content: center;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			-webkit-align-items: center;
-			align-items: center;
-		}
+	<!-- fullpage / js -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+	<script type="text/javascript">
+		
+		$(function () {
 
-		.swiper-slide img {
-			display: block;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	</style>
+			// 1. 풀페이지를 적용할 선택자 지정
+			$('#fullpage').fullpage({
+
+				// 2. 옵션 지정
+				// 스크롤 속도
+				scrollingSpeed: 500,
+				// 스크롤바 여부
+				scrollBar: false,
+				// 키보드 사용 여부
+				keyboardScrolling: true,
+				// 네비게이션 여부
+				navigation: true,
+				// 네비게이션 위치
+				navigationPosition: 'right',
+
+				// 페이지 내 슬라이드 화살표 여부
+				controlArrows: true,
+
+				// 이벤트
+				// 페이지 이동 시
+				onLeave: function (origin, destination, direction) {
+					console.log('onLeave : 페이지 이동');
+					// origin 		: 이동 전 페이지
+					// destination	: 이동 후 페이지
+					// direction	: 방향	(up/down)
+					console.log('origin: ' + origin + ' / destination: ' + destination + " / direction: " + direction);
+
+
+				},
+
+				afterRender: function () { },
+				afterResize: function (width, height) { },
+				afterReBuild: function () { },
+				afterResponsive: function (isResponsive) { },
+				// 페이지 내 슬라이드 로드 후
+				afterSlideLoad: function (section, origin, destination, direction) { },
+				// 페이지 내 슬라이드 이동 시
+				onSlideLeave: function (section, origin, destination, direction) { }
+
+
+			});
+		});
+	</script>
+
 </head>
 
 <body>
 	<!-- HEADER -->
 	<div id="header">
 		<header>
-			<h1 id="gnbLogo">
-				<a href="index.html"></a>
-			</h1>
+			<a href="index.html"><h1 id="gnbLogo"></h1></a>
+			
 			<nav>
 				<ul class="gnb">
 					<li><a href="ABOUT US.html">ABOUT US</a></li>
@@ -59,85 +97,165 @@
 				<a href="https://mall.lottechilsung.co.kr/display/displayShop.lecs?displayNo=CF1A07A01&stonType=P"
 					target="_blank">
 					<li>
-						<div class="shopicon"><img src="img/header_shop.png" alt=""></div>
+						<div class="shopicon"><img src="img/header_shopbl.png" alt=""></div>
 					</li>
 					<li>
 						<div class="shoptext">SHOP</div>
 					</li>
 					<li>
-						<div class="shopright"><img src="img/header_right.png" alt=""></div>
+						<div class="shopright"><img src="img/header_rightbl.png" alt=""></div>
 					</li>
 				</a>
 			</ul>
 		</header>
 	</div>
 
-	<div><img src="img/about us_main.png" alt=""></div>
-	<div class="history">
-		<div class="inner">
-			<p class="tit">브랜드 히스토리</p>
+	<div id="fullpage">
+		<div class="section active" id="section0">
 		</div>
-		<!-- Swiper -->
-		<div class="swiper mySwiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<img src="img/솔의눈 1995.png" alt="">
-					<div class="text">1995</div>
-					<div class="text2">CJ제일제당 솔의눈 출시</div>
+
+		<!-- history -->
+		<div class="section" id="section1">
+			
+			<div class="history">
+				<div class="inner">
+					<p class="tit">브랜드 히스토리</p>
 				</div>
-				<div class="swiper-slide">
-					<img src="img/솔의눈 2000.png" alt="">
-					<div class="text">2000</div>
-					<div class="text2">CJ제일제당 솔의눈 출시</div>
+		
+				<!-- Swiper -->
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div><img src="img/솔의눈 1995.png" alt=""></div>
+							<div class="text">1995</div>
+							<div class="text2">CJ제일제당 솔의눈 출시</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/솔의눈 2000.png" alt="">
+							<div class="text">2000</div>
+							<div class="text2">롯데칠성음료로 제품 출시</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/솔의눈 2004.png" alt="">
+							<div class="text">2004</div>
+							<div class="text2">온장고용 솔의눈 포르테 출시</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/솔의눈 2008.png" alt="">
+							<div class="text">2008</div>
+							<div class="text2">젋고 자유로우면서도 한국적인 감각으로 디자인 변경</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/솔의눈 2016.png" alt="">
+							<div class="text">2016</div>
+							<div class="text2">솔의눈의 탄산을 더한 솔의눈 스파클링 출시</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/솔의눈 2022.png" alt="">
+							<div class="text">2022</div>
+							<div class="text2">솔의눈 500ml 출시</div>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+		
 				</div>
-				<div class="swiper-slide">
-					<img src="img/솔의눈 2004.png" alt="">
-					<div class="text">2004</div>
-					<div class="text2">CJ제일제당 솔의눈 출시</div>
+				<!-- Swiper JS -->
+				<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		
+				<!-- Initialize Swiper -->
+				<script>
+					var swiper = new Swiper(".mySwiper", {
+						slidesPerView: 3,
+						spaceBetween: 30,
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						},
+					});
+				</script>
+			</div>
+			
+		</div>
+
+		<div class="section" id="section2">
+			<div class="package">
+				<div class="inner">
+					<p class="tit">패키지</p>
 				</div>
-				<div class="swiper-slide">
-					<img src="img/솔의눈 2008.png" alt="">
-					<div class="text">2008</div>
-					<div class="text2">CJ제일제당 솔의눈 출시</div>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/솔의눈 2016.png" alt="">
-					<div class="text">2016</div>
-					<div class="text2">CJ제일제당 솔의눈 출시</div>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/솔의눈 2022.png" alt="">
-					<div class="text">2022</div>
-					<div class="text2">CJ제일제당 솔의눈 출시</div>
+				<div class="package_items">
+					<div class="package_item">
+						<div><img src="img/package_can.png" alt=""></div>
+						<div class="thumb">
+							<p class="thumb_items">Can</p>
+							<ul class="capacity">
+								<li>250ml</li>
+							</ul>
+						</div>
+					</div>
+					<div class="package_item">
+						<div><img src="img/pacakage_pet.png" alt=""></div>
+						<div class="thumb">
+							<p class="thumb_items">Pet</p>
+							<ul class="capacity">
+								<li>280ml</li>
+								<li>500ml</li>
+							</ul>
+						</div>
+					</div>
+					<div class="package_item">
+						<div><img src="img/pacakage_spak.png" alt=""></div>
+						<div class="thumb">
+							<p class="thumb_items">Can</p>
+							<ul class="capacity">
+								<li>250ml</li>
+								<li>500ml</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-
 		</div>
 
-		<!-- Swiper JS -->
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- footer -->
+		<footer class="section fp-auto-height" id="section4">
+			<div class="box">
+				<!-- footer -->
+				<div class="footer">
+					<div>
+						<footer>
+							<p><img src="img/footer_logo.png" alt=""></p>
+							<nav>
+								<ul class="utill">
+									<li><a href="https://company.lottechilsung.co.kr/kor/util/terms/contentsid/567/index.do"
+											target="_blank">이용약관&nbsp</a></li>
+									<li class="point"><a
+											href="https://company.lottechilsung.co.kr/kor/util/privacy/view.do"
+											target="_blank">&nbsp·&nbsp&nbsp&nbsp개인정보처리방침&nbsp</a></li>
+									<li><a href="https://company.lottechilsung.co.kr/kor/util/movie/contentsid/861/index.do"
+											target="_blank">&nbsp·&nbsp&nbsp&nbsp영상정보처리기기운영·관리방침&nbsp</a></li>
+									<li><a href="https://mall.lottechilsung.co.kr/display/displayShop.lecs?displayNo=CF1A07A01&stonType=P"
+											target="_blank">&nbsp·&nbsp&nbsp&nbsp롯데칠성몰&nbsp</a></li>
+									<li><a href="https://company.lottechilsung.co.kr/kor/management/sinmungo/report/guide.do"
+											target="_blank">&nbsp·&nbsp&nbsp&nbsp신문고&nbsp</a></li>
+									<li><a href="https://company.lottechilsung.co.kr/kor/util/sitemap/contentsid/569/index.do"
+											target="_blank">&nbsp·&nbsp&nbsp&nbsp사이트맵&nbsp</a></li>
+								</ul>
+							</nav>
+							<p class="inpo"><span>서울특별시 송파구 올림픽로 269 롯데캐슬골드 5층 | TEL : 02-3479-9114 | FAX : 02-536-9767
+									| 대표이사 :
+									박윤기</span></p>
+							<p class="copy"><span>Copyright&copy;2018 LOTTE CHILSUNG BEVERAGE CO.,LTD. ALL RIGHTS
+									RESERVED</span>
+							</p>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
 
-		<!-- Initialize Swiper -->
-		<script>
-			var swiper = new Swiper(".mySwiper", {
-				slidesPerView: 3,
-				spaceBetween: 30,
-				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
-				},
-			});
-		</script>
-	</div>
-
-	<!-- package -->
-	<div class="package">
-		<div class="inner">
-			<p class="tit">패키지</p>
-		</div>
-	</div>
 </body>
 
 </html>
+

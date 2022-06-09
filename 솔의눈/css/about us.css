@@ -1,0 +1,153 @@
+  @font-face {
+    src: url("../fonts/NotoSansKR-Black.otf");
+    font-family: "noto";
+}
+  
+  
+  #section0 {
+	background-image: url(../img/about\ us_main.png);
+  }
+  
+  #section1 {
+	background-color: white;
+  }
+  
+  #section2 {
+	background-color: white;
+  }
+  
+
+  
+  #section0,
+  #section1,
+  #section2,
+  #slide1,
+  #slide2 {
+	background-size: cover;
+	background-attachment: fixed;
+  }
+
+/* history */
+.history {
+    margin-left: 400px;
+}
+
+.tit {
+    position: relative;
+    text-align: left;
+    font-size: 40px;
+    font-family: "noto";
+    color: #000;
+    font-weight: bold;
+}
+
+.tit:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -140px;
+    top: 0;
+    width: 100px;
+    height: 5px;
+    background: #000;
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 600px;
+}
+
+
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.text {
+    font-size: 70px;
+    position: absolute;
+    font-weight: bold;
+    top: 81%;
+    left: 0;
+    color: #6D6D6D;
+}
+
+.text2 {
+    position: absolute;
+    top: 96.5%;
+    left: 0;
+    color: #6D6D6D;
+}
+
+.swiper-button-next{
+    margin-right: 50px;
+}
+
+/* package */
+.package {
+    margin-left: 400px;
+    margin-top: 150px;
+}
+
+.package_items {
+    display: flex;
+    justify-content: space-between;
+    width: 1173px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.package_item img {
+    border-radius: 155px;
+}
+
+.thumb {
+    text-align: center;
+}
+
+.thumb_items {
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 50px;
+	color: #333;
+}
+
+.thumb_items:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 1px;
+    height: 40px;
+    background: #000;
+    margin-top: 10px;
+}
+
+.capacity {
+    list-style: none;
+    font-size: 18px;
+    color: #5A5A5A;
+    font-weight: 600;
+}
