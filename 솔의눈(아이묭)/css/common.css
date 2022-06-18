@@ -1,0 +1,100 @@
+@font-face {
+    src: url("../fonts/SCDream5.otf")format("otf");
+    font-family: "dream";
+}
+* {margin: 0;padding: 0;box-sizing: border-box;}
+ul, li {list-style: none;}
+a {text-decoration: none;color: inherit;}
+img {vertical-align: middle;}
+html{scroll-behavior: smooth}
+body {font-family: "dream", sans-serif;}
+.clearfix:after{content:"";display:block;clear:both;}
+
+/* common End */
+
+.header {
+    position: fixed;left: 0;top: 0;z-index: 99;
+    width: 100%;
+    background: #fff;
+}
+.header .inner {
+    position: relative;display: flex;justify-content: space-between;align-items: center;
+    width: 100%;min-width: 1300px;max-width: 1920px;
+    margin: 0 auto;padding: 10px 50px;
+}
+
+.header img {
+    width: 80px;
+}
+
+.header .logo a {
+    display: block;
+    font-size: 0;
+}
+
+.header .gnb {
+    width: 950px;
+}
+.header .gnb ul {
+    display: flex;justify-content: space-between;align-items: center;
+    color: #333;
+    font-size: 20px;font-weight: bold;
+}
+.header .shop {
+    font-size: 12px;
+}
+.header .shop ul {
+    display: flex;justify-content: space-between;align-items: center;
+    color: #888;
+}
+.header .shop ul li img {
+    width: 20px;
+}
+
+/* header End */
+
+#footer {
+    padding: 60px 0 55px;
+    background-color: #309B4F;
+}
+
+#footer .inner {
+    text-align: center;
+    color: #fff;
+}
+
+#footer .inenr .content {}
+#footer .inenr .content p {}
+#footer .inenr .content img{}
+
+#footer .inner .content .utill {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 0;
+}
+
+#footer .inner .content .utill li {
+    background:url('../img/footer_dot.png') no-repeat left center;
+    font-size: 18px;
+    margin-left: 18px;padding-left: 24px;
+}
+
+#footer .inner .content .inpo {
+    font-size: 16px;
+    margin-top: 35px;
+}
+
+#footer .inner .content .copy {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+
+#footer .inner .content .utill li:nth-child(1) {
+    background: none;
+    margin-left: 0;padding-left: 0;
+}
+
+#footer .inner .content .utill li:nth-child(2) {
+    font-weight: bold;
+}

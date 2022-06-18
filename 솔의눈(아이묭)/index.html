@@ -1,84 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <title>솔의 눈</title>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="vender/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- js -->
+    <script src="vender/slick.min.js"></script>
+    <script defer src="js/main.js"></script>
+    
 </head>
 
 <body>
-        <header class="header">
-            <div class="inner">
-                <h1 class="logo"><img src="img/logo_gr.png" alt=""></h1>
-                <nav class="gnb">
+
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo"><a href="#"><img src="img/logo_gr.png" alt="솔의눈_logo"></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#about_us">about us</a></li>
+                    <li><a href="#history">history</a></li>
+                    <li><a href="#video">video</a></li>
+                    <li><a href="https://company.lottechilsung.co.kr/kor/main/index.do" target="_blank">company</a></li>
+                </ul>
+            </nav>
+            <div class="shop">
+                <a href="https://mall.lottechilsung.co.kr/display/displayShop.lecs?displayNo=CF1A07A01&stonType=P"
+                    target="_blank">
                     <ul>
-                        <li><a href="">about us</a></li>
-                        <li><a href="">product</a></li>
-                        <li><a href="">community</a></li>
-                        <li><a href="">company</a></li>
+                        <li><img src="img/header_shopbl.png" alt="shop_logo"></li>
+                        <li>SHOP</li>
+                        <li><img src="img/header_rightbl.png" alt="shop_logo2"></li>
                     </ul>
-                </nav>
-                <div class="shop">
-                    <a href="">
-                        <ul>
-                            <li><img src="img/header_shopbl.png" alt=""></li>
-                            <li>SHOP</li>
-                            <li><img src="img/header_rightbl.png" alt=""></li>
+                </a>
+            </div>
+        </div>
+    </header> <!-- header End -->
+
+    <section class="main_section" id="main">
+
+        <div class="slider" id="main_slider">
+
+            <div>
+                <img src="img/main1bg.png" alt="첫번 째 메인사진" class="main_bg">
+                <div class="main_comment">
+                    <p>머리까지 시원해지는 느낌</p>
+                    <h2><img src="img/logo_gr.png" alt="솔의 눈_로고"></h2>
+                    <i>Pine bud Drink</i>
+                </div>
+            </div>
+
+            <div>
+                <img src="img/main2bg.png" alt="두번 째 메인사진" class="main_bg">
+                <div class="main_comment">
+                    <p>머리속 솔잎 샤워 느낌</p>
+                    <h2><img src="img/logo_gr.png" alt="솔의 눈_로고"></h2>
+                    <i>Pine bud Drink</i>
+                </div>
+            </div>
+
+            <div>
+                <img src="img/main3bg.png" alt="세번 째 메인사진" class="main_bg">
+                <div class="main_comment">
+                    <p>머리까지 상쾌해지는 느낌</p>
+                    <h2><img src="img/logo_gr.png" alt="솔의 눈_로고"></h2>
+                    <h3><img src="img/스파클링폰트.png" alt="스파클링폰트"></h3>
+                    
+                </div>
+            </div>
+
+
+        </div>
+        <div class="scroll_icon">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+        </div>
+    </section> <!-- main_section End -->
+
+        <section class="about_section" id="about_us">
+            <div class="inner clearfix">
+                <div class="left_con">
+                    <article>
+                        <div class="con"></div>
+                        <div class="hover_con">
+                            <div class="con_list">
+                                <p class="con_top">매출액 (평균)</p>
+                                <p class="con_bottom">
+                                    <span>100</span>
+                                    억원
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="con"></div>
+                        <div class="hover_con">
+                            <div class="con_list">
+                                <p class="con_top">호흡기에 좋은</p>
+                                <p class="con_bottom">
+                                    <span>솔싹</span>
+                                    음료
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="right_con">
+                    <article>
+                        <div class="con"></div>
+                        <div class="hover_con">
+                            <div class="con_list">
+                                <p class="con_top">Since</p>
+                                <p class="con_bottom">
+                                    <span>1995</span>
+                                    년
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="con"></div>
+                        <div class="hover_con">
+                            <div class="con_list">
+                                <p class="con_top">스테디셀러 음료</p>
+                                <p class="con_bottom">
+                                    <span>26</span>
+                                    년
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section> <!--about_section End-->
+
+
+        <section class="history_section" id="history">
+            <video src="img/history.mp4" autoplay muted loop ></video>
+
+            <div class="history_inner">
+                <div class="history_comment">
+                    <p>솔의 눈 이야기</p>
+                    <p>솔의 눈만의 특별한 스토리를 들어보세요</p>
+                </div>
+                <div class="autoplay">
+
+                    <div class="history_goods">
+                        <img src="img/솔의눈 1995.png" alt="">
+                        <p>1995</p>
+                        <p>CJ제일제당 솔의 눈 출시</p>
+                    </div>
+                    <div class="history_goods">
+                        <img src="img/솔의눈 2000.png" alt="">
+                        <p>2000</p>
+                        <p>롯데칠성음료로 제품 출시</p>
+                    </div>
+                    <div class="history_goods">
+                        <img src="img/솔의눈 2004.png" alt="">
+                        <p>2004</p>
+                        <p>온장고용 솔의 눈 포르테 출시</p>
+                    </div>
+                    <div class="history_goods">
+                        <img src="img/솔의눈 2008.png" alt="">
+                        <p>2008</p>
+                        <p>한국적인 감각으로 디자인 변경</p>
+                    </div>
+                    <div class="history_goods">
+                        <img src="img/솔의눈 2016.png" alt="">
+                        <p>2016</p>
+                        <p>탄산을 더한 솔의 눈 출시</p>
+                    </div>
+                    <div class="history_goods">
+                        <img src="img/솔의눈 2022.png" alt="">
+                        <p>2022</p>
+                        <p>솔의 눈 500ml 출시</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section> <!-- history_section End -->
+
+
+        <section class="video_section" id="video">
+            <div class="video_comment">솔의 눈 CF</div>
+            <div class="video_slider">
+                <div class="video_content">
+                    <img src="img/media1.png" alt="" class="thumbnail">
+				    <img class="play1 btn-play" src="img/play.png" alt="">
+				    <div id="player1" class="player"></div>
+                </div>
+                <div class="video_content">
+                    <img src="img/media2.png" alt="" class="thumbnail">
+				    <img class="play2 btn-play" src="img/play.png" alt="">
+				    <div id="player2" class="player"></div>
+                </div>
+                <div class="video_content">
+                    <img src="img/media3.png" alt="" class="thumbnail">
+				<img class="play3 btn-play" src="img/play.png" alt="">
+				<div id="player3" class="player"></div>
+                </div>
+              </div>
+        </section>
+
+        <footer class="footer_section" id="footer">
+            <div class="inner">
+                <div class="content">
+                    <p><img src="img/footer_logo.png" alt=""></p>
+                        <ul class="utill">
+                            <li><a href="https://company.lottechilsung.co.kr/kor/util/terms/contentsid/567/index.do"
+                                    target="_blank">이용약관</a></li>
+                            <li class="point"><a
+                                    href="https://company.lottechilsung.co.kr/kor/util/privacy/view.do"
+                                    target="_blank">개인정보처리방침</a></li>
+                            <li><a href="https://company.lottechilsung.co.kr/kor/util/movie/contentsid/861/index.do"
+                                    target="_blank">영상정보처리기기운영 · 관리방침</a></li>
+                            <li><a href="https://mall.lottechilsung.co.kr/display/displayShop.lecs?displayNo=CF1A07A01&stonType=P"
+                                    target="_blank">롯데칠성몰</a></li>
+                            <li><a href="https://company.lottechilsung.co.kr/kor/management/sinmungo/report/guide.do"
+                                    target="_blank">신문고</a></li>
+                            <li><a href="https://company.lottechilsung.co.kr/kor/util/sitemap/contentsid/569/index.do"
+                                    target="_blank">사이트맵</a></li>
                         </ul>
-                    </a>
+                    <p class="inpo">서울특별시 송파구 올림픽로 269 롯데캐슬골드 5층 | TEL : 02-3479-9114 | FAX : 02-536-9767
+                            | 대표이사 :
+                            박윤기</p>
+                    <p class="copy">Copyright&copy;2018 LOTTE CHILSUNG BEVERAGE CO.,LTD. ALL RIGHTS
+                            RESERVED
+                    </p>
                 </div>
             </div>
-        </header> <!-- header End -->
+        </footer>
 
-        <section class="main">
-            <ul>
-                <li><div class="main_comment"><p>머리까지 시원해지는 느낌</p><h2><img src="img/logo_gr.png" alt=""></h2></div></li>
-                <li><div class="main_comment"><p>머리까지 시원해지는 느낌</p><h2><img src="img/logo_gr.png" alt=""></h2></div></li>
-                <li><div class="main_commnet"><p>머리까지 시원해지는 느낌</p><h2><img src="img/logo_gr.png" alt=""></h2></div></li>
-            </ul>
-            <div class="btn">
-                <div class="btn_prev"><img src="img/media_left.png" alt=""></div>
-                <div class="btn_next"><img src="img/media_right.png" alt=""></div>
-            </div>
-        </section> <!-- main End -->
 
-        <section class="main_content">
-        <div class="content">
-            <div class="content_list">
-                <div class="list">
-                    <p class="list_top">매출액 (평균)</p>
-                    <p class="list_bottom">
-                        <span>100</span>
-                        억원
-                    </p>
-                </div>
-                <div class="list">
-                    <p class="list_top">?</p>
-                    <p class="list_bottom">
-                        <span>28</span>
-                        년
-                    </p>
-                </div>
-                <div class="list">
-                    <p class="list_top">호흡기에 좋은</p>
-                    <p class="list_bottom">
-                        <span>솔싹추출 </span>
-                        음료
-                    </p>
-                </div>
-                <div class="list">
-                    <p class="list_top">매출액 (평균)</p>
-                    <p class="list_bottom">
-                        <span>100</span>
-                        억원
-                    </p>
-                </div>
-            </div>
-        </div>        
-    </section> <!-- main_content End -->
+
+
+
+
+
 </body>
 
 </html>
