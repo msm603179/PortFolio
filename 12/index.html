@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+
+	
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+<section class="video_section" id="video">
+    <div class="video_comment">솔의 눈 CF</div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="video_content">
+                <img src="img/media1.png" alt="" class="thumbnail">
+                <img class="play1 btn-play" src="img/play.png" alt="">
+                <div id="player1" class="player"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="video_content">
+                <img src="img/media2.png" alt="" class="thumbnail">
+                <img class="play2 btn-play" src="img/play.png" alt="">
+                <div id="player2" class="player"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="video_content">
+                <img src="img/media3.png" alt="" class="thumbnail">
+            <img class="play3 btn-play" src="img/play.png" alt="">
+            <div id="player3" class="player"></div>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+</section>
+
+
+
+
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop:true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>

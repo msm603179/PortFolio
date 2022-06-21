@@ -50,8 +50,17 @@ $(function() {
         $('.thumbnail').eq(index).hide()
         $(this).hide()
 
-        
+        $('.slick-next').on('click', function() {
+            jQuery("iframe").each(function() {
+                jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+            });
+        });
 
+        $('.slick-prev').on('click', function() {
+            jQuery("iframe").each(function() {
+                jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+            });
+        });
 
 
     })
@@ -80,6 +89,7 @@ function onYouTubeIframeAPIReady() {
                 'modestbranding':1,
                 'frameborderz':0,
                 'mute':0,
+                'enablejsapi':0,
             },
             events: {
                 'onReady': onPlayerReady,               // 플레이어 로드가 완료되고 API 호출을 받을 준비가 될 때마다 실행

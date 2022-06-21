@@ -2,9 +2,9 @@
 /**
          * Youtube API 로드
          */
- var tag = document.createElement('script');
+ let tag = document.createElement('script');
  tag.src = "https://www.youtube.com/iframe_api";
- var firstScriptTag = document.getElementsByTagName('script')[0];
+ let firstScriptTag = document.getElementsByTagName('script')[0];
  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
@@ -35,7 +35,7 @@ $(function() {
 })
 
 
-var playerList = new Array();
+let playerList = new Array();
 function onYouTubeIframeAPIReady() {
     
     let videoIdList = ['XfXinUaSglY','9Xc2ozyYIPY','Do1m90G5Axc']
@@ -46,7 +46,7 @@ function onYouTubeIframeAPIReady() {
 
             videoId: videoIdList[i-1],
             // origin : 가져올 서버의 주소를 입력
-            playerVars : { 
+            playerlets : { 
                 'rel': 0,
                 'loop':1,
                 'controls': 1,
@@ -55,6 +55,7 @@ function onYouTubeIframeAPIReady() {
                 'modestbranding':1,
                 'frameborderz':0,
                 'mute':0,
+                'enablejsapi':1,
             },
             events: {
                 'onReady': onPlayerReady,               // 플레이어 로드가 완료되고 API 호출을 받을 준비가 될 때마다 실행
@@ -74,15 +75,12 @@ function onPlayerReady(event) {
     // 플레이어 자동실행 (주의: 모바일에서는 자동실행되지 않음)
     // event.target.playVideo();
 }
-var playerState;
 function onPlayerStateChange(event) {
-    playerState = event.data == YT.PlayerState.ENDED ? '종료됨' :
-            event.data == YT.PlayerState.PLAYING ? '재생 중' :
-            event.data == YT.PlayerState.PAUSED ? '일시중지 됨' :
-            event.data == YT.PlayerState.BUFFERING ? '버퍼링 중' :
-            event.data == YT.PlayerState.CUED ? '재생준비 완료됨' :
-            event.data == -1 ? '시작되지 않음' : '예외';
-
-    console.log('onPlayerStateChange 실행: ' + playerState);
-}
-
+    if (event.data == YT.PlayerState.PLAYING && !done) {
+      setTimeout(stopVideo, 6000);
+      done = true;
+    }
+  }
+  function stopVideo() {
+    player.stopVideo();
+  }
