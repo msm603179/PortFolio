@@ -1,7 +1,12 @@
+@font-face {
+    src: url("../fonts/SCDream9.otf")format("otf");
+    font-family: "s-coredream";
+}
 * {margin: 0;padding: 0;box-sizing: border-box;}
 ul, li {list-style: none;}
 a {text-decoration: none;color: inherit;}
 img {vertical-align: middle;}
+body {font-family: "s-coredream", sans-serif;}
 html{scroll-behavior: smooth}
 
 #header {
@@ -281,10 +286,9 @@ html{scroll-behavior: smooth}
     margin-right: 0;
 }
 
-#topping .five_topping .bottom_topping li:nth-child(1) {
-    margin-left: 150px;
+#topping .five_topping .bottom_topping {
+    justify-content: center;
 }
-
 
 #topping .five_topping ul li p:nth-child(1) {
     color: #222222;
@@ -307,6 +311,8 @@ html{scroll-behavior: smooth}
     font-size: 16px;
 }
 
+
+
 /* topping End */
 
 #order {
@@ -326,21 +332,15 @@ html{scroll-behavior: smooth}
 }
 
 #order .order_head p {
-    font-size: 16px;
-    /*margin-top: 20px;*/
-    /*margin-bottom: 50px;*/
+    line-height: 25px;
     margin:20px 0 30px;
+    font-size: 16px;font-weight: 500;
 }
 
 #order .order_head p span {
     color: #983B43;
 }
 
-#order .order_head div {
-    /*position: absolute;*/
-    /*top: 50%;left: 18%;*/
-
-}
 
 #order .order_body {
     width: 1810px;
@@ -415,6 +415,7 @@ html{scroll-behavior: smooth}
 }
 #order .step02 .topping_list .bottom_topping {
     display: flex;
+    justify-content:center;
 }
 
 #order .step02 .topping_list li {
@@ -468,17 +469,25 @@ html{scroll-behavior: smooth}
 /* order End */
 
 #imperial {
-    width: 1700px;
     text-align: center;
     color: #C30E2F;font-weight: bold;
+    position:relative;
+}
+#imperial:before{
+    content:"";
+    width:90%;
+    height:100%;
+    background: #F1F2F2;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: -1;
 }
 
 #imperial .inner {
+    width: 1700px;
     padding: 50px 0;
-}
-
-#imperial .imperial_head {
-    padding-left: 13.2%;
+    margin:0 auto;
 }
 
 #imperial .imperial_head p:nth-child(1) {
@@ -491,8 +500,7 @@ html{scroll-behavior: smooth}
 
 #imperial .imperial_body {
     padding: 80px 0;
-    padding-left: 13.1%;
-    background: #F1F2F2;color: #000000;
+   color: #000000;
 }
 
 #imperial .imperial_body p:nth-child(1) {
@@ -505,6 +513,10 @@ html{scroll-behavior: smooth}
 }
 
 /* imperial End */
+
+#footer {
+    position: relative;
+}
 
 #footer .inner {
     width: 1903px;

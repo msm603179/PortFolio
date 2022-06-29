@@ -1,0 +1,42 @@
+#section02 {
+    text-align: center;
+}
+
+#section02 .section02_contents {
+    margin: 100px 25%;
+}
+
+#section02 .section02_list .brand_list {
+    display: flex;
+    justify-content: center;
+}
+
+#section02 .section02_list .top_brand_list {
+    margin-bottom: 90px;
+}
+
+#section02 .section02_list .brand_list li {
+    width: 293px;
+    font-weight: bold;
+}
+
+#section02 .section02_list .brand_list li h2 {
+    margin-top: 25px;
+    color: #983B43;
+    font-size: 33px;
+}
+
+#section02 .section02_list .brand_list li p {
+    margin: 25px 0;
+    color: #444444;
+    font-size: 16px;
+}
+
+#section02 .section02_list .brand_list li span {
+    color: #666666;
+    font-size: 14px;
+}
+
+#section02 .brand_sub {
+    margin-bottom: 100px;
+}
