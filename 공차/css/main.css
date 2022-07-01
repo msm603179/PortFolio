@@ -1,5 +1,5 @@
 @font-face {
-    src: url("../fonts/SCDream9.otf")format("otf");
+    src: url("../css/fonts/SCDream9.otf")format("otf");
     font-family: "s-coredream";
 }
 * {margin: 0;padding: 0;box-sizing: border-box;}
@@ -8,7 +8,10 @@ a {text-decoration: none;color: inherit;}
 img {vertical-align: middle;}
 body {font-family: "s-coredream", sans-serif;}
 html{scroll-behavior: smooth}
-
+::selection{
+    background:#ca0733;
+    color:#fff;
+}
 #header {
     position: relative;
     background: url(../img/main_bg.png); overflow: hidden;

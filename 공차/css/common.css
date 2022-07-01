@@ -1,5 +1,5 @@
 @font-face {
-    src: url("../fonts/SCDream9.otf")format("otf");
+    src: url("../css/fonts/SCDream9.otf")format("otf");
     font-family: "s-coredream";
 }
 * {margin: 0;padding: 0;box-sizing: border-box;}
@@ -8,6 +8,11 @@ a {text-decoration: none;color: inherit;}
 img {vertical-align: middle;}
 body {font-family: "s-coredream", sans-serif;}
 html{scroll-behavior: smooth}
+::selection{
+    background:#ca0733;
+    color:#fff;
+}
+
 
 #header {
     position: relative;
@@ -60,13 +65,16 @@ html{scroll-behavior: smooth}
     width: 100%;
 }
 
-#head .inner_brand {
+#head .inner {
     position: relative;
+    text-align: center;
 }
 
 #head .head_comment {
     position: absolute;
-    top: 20%;left: 20%;
+    top: 20%;
+    left: 50%;
+    transform:translateX(-500px);
     color: #ffffff;
 }
 
@@ -75,6 +83,7 @@ html{scroll-behavior: smooth}
 }
 
 #head .head_comment p {
+    text-align: left;
     font-size: 17px;
 }
 
@@ -83,13 +92,12 @@ html{scroll-behavior: smooth}
 #section01 {
     text-align: center;
     width: 100%;
-    
+    background: #E4DCD2;
 }
 
 #section01 .section01_comment {
     margin: 0 auto;
     padding: 100px 0;
-    background: #E4DCD2;
 }
 
 #section01 .section01_comment h3 {
