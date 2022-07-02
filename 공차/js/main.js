@@ -9,7 +9,7 @@
         pauseOnHover:false,
         fade: true
       });
-});
+}); // index End
 
 $(document).ready(function (){
   $('.face').mouseover(function(){
@@ -34,21 +34,14 @@ $(document).ready(function (){
   
   $('.kakao').mouseout(function(){
     $(this).attr('src', 'img/kakao.png');
-  })
-
-
-
-
+  }) // common End
 
   $(".tea").on("click", function(){
-
-  });
-
-  $(".tea").click(function(){
     $(".tea_img").attr('src', 'img/tea.png');
     $(".milktea_img").attr('src', 'img/milkbl.png');
     $(".fruit_img").attr('src', 'img/fruitbl.png');
     $(".jewelry_img").attr('src', 'img/jewelrybl.png');
+    
     $("#section02 .inner").css("height","687px");
 
     $(".tea_list").fadeIn();
@@ -57,11 +50,13 @@ $(document).ready(function (){
     $(".jewelry_list").fadeOut();
   });
 
-  $(".milktea").click(function(){
+
+  $(".milktea").on("click", function(){
     $(".tea_img").attr('src', 'img/teabl.png');
     $(".milktea_img").attr('src', 'img/milk.png');
     $(".fruit_img").attr('src', 'img/fruitbl.png');
     $(".jewelry_img").attr('src', 'img/jewelrybl.png');
+
     $("#section02 .inner").css("height","1860px");
 
     $(".tea_list").fadeOut();
@@ -70,31 +65,79 @@ $(document).ready(function (){
     $(".jewelry_list").fadeOut();
   });
 
-  $(".fruitmix").click(function(){
+  $(".fruitmix").on("click", function(){
     $(".tea_img").attr('src', 'img/teabl.png');
     $(".milktea_img").attr('src', 'img/milkbl.png');
     $(".fruit_img").attr('src', 'img/fruit.png');
     $(".jewelry_img").attr('src', 'img/jewelrybl.png');
+
     $("#section02 .inner").css("height","1239px");
+
     $(".tea_list").fadeOut();
     $(".milktea_list").fadeOut();
     $(".fruitmix_list").fadeIn();
     $(".jewelry_list").fadeOut();
   });
-
-  $(".jewelry").click(function(){
+  
+  $(".jewelry").on("click", function(){
     $(".tea_img").attr('src', 'img/teabl.png');
     $(".milktea_img").attr('src', 'img/milkbl.png');
     $(".fruit_img").attr('src', 'img/fruitbl.png');
     $(".jewelry_img").attr('src', 'img/jewelry.png');
+
     $("#section02 .inner").css("height","687px");
+
     $(".tea_list").fadeOut();
     $(".milktea_list").fadeOut();
     $(".fruitmix_list").fadeOut();
-    $(".jewelry_list").fadeIn();
-  });
+    $(".jewelry_list").fadeIn();    
+  }); // tea End
 
+  $(".korea_icon").on("click", function(){
+    $(".korea_detail").fadeIn();
+  })
+
+  $(".japan_icon").on("click", function(){
+    $(".japan_detail").fadeIn();
+  })
+  
+  $(".china_icon").on("click", function(){
+    $(".china_detail").fadeIn();
+  })
+
+  $(".hongkong_icon").on("click", function(){
+    $(".hongkong_detail").fadeIn();
+  })
+
+  $(".taiwan_icon").on("click", function(){
+    $(".taiwan_detail").fadeIn();
+  })
+
+  $(".australia_icon").on("click", function(){
+    $(".australia_detail").fadeIn();
+  })
+
+  $(".vietnam_icon").on("click", function(){
+    $(".vietnam_detail").fadeIn();
+  })
+
+  $(".uk_icon").on("click", function(){
+    $(".uk_detail").fadeIn();
+  })
+
+  $(".usa_icon").on("click", function(){
+    $(".usa_detail").fadeIn();
+  })
+
+  $(".mexico_icon").on("click", function(){
+    $(".mexico_detail").fadeIn();
+  })
+
+  $(".canada_icon").on("click", function(){
+    $(".canada_detail").fadeIn();
+  })
+
+  $(".close").on("click", function(){
+    $(".detail").fadeOut();
+  }) // global End
 }) 
-$('#item2 .fadeIn').on('click', function() {
-  $('#item2 .target-box').fadeIn()
-})

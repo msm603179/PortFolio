@@ -1,7 +1,8 @@
 #section01 {}
 
 #section01 ul {
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     width: 1091px;
     margin: 0 auto;
     padding: 72px 0;
@@ -22,18 +23,15 @@
 /* section01 End */
 
 #section02 {
+    width: 1903px;
     margin: 100px auto;
 }
 
 #section02 .inner {
     position: relative;
     margin-left: 90px;
-    height:687px;
+    height: 687px;
 }
-
-
-
-
 
 #section02 .menu_list {
     position: absolute;
@@ -56,7 +54,7 @@
 
 #section02 .tit {
     padding-bottom: 30px;
-    border-bottom: solid 1px ;
+    border-bottom: solid 1px;
     font-size: 26px;
 }
 
@@ -74,7 +72,7 @@
 }
 
 #section02 .fruitmix_list ul li:nth-child(7) {
-    margin-right: 371px;    
+    margin-right: 371px;
 }
 
 #section02 ul li img {
@@ -85,3 +83,6 @@
     font-size: 20px;
 }
 
+#section02 .milktea_list ul li:nth-child(9) {
+    margin-right: 63.9%;
+}
