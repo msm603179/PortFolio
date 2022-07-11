@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!-- <div id="scrollBox">0</div>스크롤 이벤트 다 작성하고 주석처리 하세요 -->
     <header id="header">
         <div class="inner">
             <h1 class="main_logo"><a href="index.html"><img src="img/main_logo.png" alt="공차메인로고"></a></h1>
@@ -37,6 +38,9 @@
                                 class="kakao"></a></li>
                 </ul>
             </nav>
+            <div class="top_scroll">
+                <img src="img/top.png" alt="">
+            </div>
         </div>
         <div class="slider">
             <div class="contents">
@@ -80,11 +84,11 @@
                 <p>GONGCHA</p>
             </div>
             <div class="brand left_content">
-                <div class="story_box_left story_box">
+                <div class="story_box_left story_box brand_leftbox">
                     <span><img src="img/main_brand.png" alt="brand 메인 이미지"></span>
-                    <div class="storybox_comment">
+                    <div class="storybox_comment brand_lefth3">
                         <h3>Brand</h3>
-                        <div class="sub_text">
+                        <div class="sub_text brand_leftcomment">
                             <strong>바칠 공(貢) 차 차(茶)</strong>
                             <p>공차는 중국 황실에서만 맛볼 수 있었던<br>
                                 프리미엄 퀄리티의 차를 바친다는 의미처럼<br>
@@ -101,10 +105,10 @@
             </div>
 
             <div class="philosophy right_content">
-                <div class="story_box_right story_box">
-                    <div class="storybox_comment">
+                <div class="story_box_right story_box ph_rightbox">
+                    <div class="storybox_comment ph_righth3">
                         <h3>Philosophy</h3>
-                        <div class="sub_text">
+                        <div class="sub_text ph_rightcomment">
                             <strong>Integrity & Quality</strong>
                             <p>공차라는 이름의 걸맞게 왕에게 제공하<br>
                                 겠다는의미를 지키기 위해 초기의 맛과<br>
@@ -116,17 +120,17 @@
                             </a>
                         </div>
                     </div>
-                    <span><img src="img/main_philosophy.png" alt="philosophy 메인 이미지"></span>
+                    <span class="img"><img src="img/main_philosophy.png" alt="philosophy 메인 이미지"></span>
                     <span class="border"></span>
                 </div>
             </div>
 
             <div class="tea left_content">
-                <div class="story_box_left story_box">
+                <div class="story_box_left story_box tea_leftbox">
                     <span><img src="img/main_tea.png" alt="tea 메인 이미지"></span>
-                    <div class="storybox_comment">
+                    <div class="storybox_comment tea_lefth3">
                         <h3>Tea</h3>
-                        <div class="sub_text">
+                        <div class="sub_text tea_leftcomment">
                             <strong>Satisfaction beyond expectation</strong>
                             <p>공차의 음료는 기본이 되는 티, 에이드,<br>
                                 스무디 등을 토대로토핑과 당도 얼음에<br>
@@ -143,10 +147,10 @@
             </div>
 
             <div class="global right_content">
-                <div class="story_box_right story_box">
-                    <div class="storybox_comment">
+                <div class="story_box_right story_box gl_rightbox">
+                    <div class="storybox_comment gl_righth3">
                         <h3>Global</h3>
-                        <div class="sub_text">
+                        <div class="sub_text gl_rightcomment">
                             <strong>Global Tea</strong>
                             <p>공차는 전 세계 1,600개 이상의 매장에서<br>
                                 차별화된 컨셉과 메뉴로 새 바람의 돌풍을<br>
@@ -157,7 +161,7 @@
                             </a>
                         </div>
                     </div>
-                    <span><img src="img/main_global.png" alt="global 메인 이미지"></span>
+                    <span class="img"><img src="img/main_global.png" alt="global 메인 이미지"></span>
                     <span class="border"></span>
                 </div>
             </div>
@@ -225,11 +229,11 @@
                     5가지 당도와 얼음량, 토핑까지 선택할 수 있어 취향에 따라 커스터마이징하여 주문 가능합니다.<br>
                     <span>약 600여 가지의 다양한 조합으로 음료를 즐길 수 있습니다.</span>
                 </p>
-                <div><img src="img/order.png" alt="order 메인 이미지"></div>
+                <div class="img"><img src="img/order.png" alt="order 메인 이미지"></div>
             </div>
             <div class="order_body">
                 <div class="step01 order_contents">
-                    <div class="order_body_comment">
+                    <div class="order_body_comment first">
                         <h2>Step 01</h2>
                         <p>TEA MENU</p>
                         <p>취향에 맞게 공차의 음료를 고르세요.</p>
@@ -264,7 +268,7 @@
                     </div>
                 </div>
                 <div class="step02 order_contents">
-                    <div class="order_body_comment">
+                    <div class="order_body_comment second">
                         <h2>Step 02</h2>
                         <p>TOPPINGS</p>
                         <p>최대 3가지의 토핑을 선택하세요.</p>
@@ -312,7 +316,7 @@
                     </div>
                 </div>
                 <div class="step03 order_contents">
-                    <div class="order_body_comment">
+                    <div class="order_body_comment third">
                         <h2>Step 03</h2>
                         <p>SWEET & ICE GRADE</p>
                         <p>당도와 얼음량을 원하시는 만큼 조절하세요.</p>

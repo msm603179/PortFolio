@@ -3,6 +3,20 @@
     font-family: "s-coredream";
 }
 
+#scrollBox{
+    width:100px;
+    height:50px;
+    background:black;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    font-size:30px;
+    line-height:50px;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 9999;
+}
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +48,27 @@ html {
 ::selection {
     background: #ca0733;
     color: #fff;
+}
+
+#header .top_scroll {
+    position: fixed;top: 80%;right: 3.2%;z-index: 99;opacity: 0;
+    width: 55px; height: 55px;
+    display: flex; align-items: center; justify-content: center;
+    background: #c9032e; border-radius: 50%; 
+    cursor: pointer;
+}
+
+#header .top_scroll.on {
+    opacity: 1;
+}
+
+#header .top_scroll:hover img {
+    animation: top_ani 0.3s linear 0s infinite alternate;
+}
+
+@keyframes top_ani {
+	0% {margin-bottom: 0px;}
+	100% {margin-bottom: 7px;}
 }
 
 
@@ -89,6 +124,15 @@ html {
     color: #C30E2F;
 }
 
+#header .top_scroll {
+    position: fixed;top: 80%;right: 2%;z-index: 99;opacity: 0.4;
+    cursor: pointer;
+}
+
+#header .top_scroll:hover {
+    opacity: 1;
+}
+
 /* header End */
 
 #head {
@@ -125,6 +169,21 @@ html {
     background: #E4DCD2;
 }
 
+#section01 .section01_common {
+    animation-name: fadeInUp; animation-duration: 1s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
 #section01 .section01_comment {
     margin: 0 auto;
     padding: 100px 0;
@@ -144,6 +203,27 @@ html {
 
 #section01 .section01_comment p span {
     color: #983B43;
+}
+
+
+#section01 ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1091px;
+    margin: 0 auto;
+    padding: 72px 0;
+}
+
+#section01 ul li:hover {
+    cursor: pointer;
+}
+
+#section01 ul li p {
+    margin-top: 30px;
+}
+
+#section01 ul li span {
+    color: #666666;
 }
 
 /* section01 End */

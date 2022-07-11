@@ -50,16 +50,12 @@
     width: 150px;
 }
 
-
-
 #main .slider .slick-active .main_comment{
     animation-name: fadeInUp; animation-duration: 1s; animation-delay:0.5s;
     opacity: 0;
     animation-fill-mode: forwards;
     /* keyframes의 마지막 css 속성을 유지   */
 }
-
-
 
 @keyframes fadeInUp {
     0% {

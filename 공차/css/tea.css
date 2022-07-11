@@ -1,26 +1,4 @@
-#section01 {}
 
-#section01 ul {
-    display: flex;
-    justify-content: space-between;
-    width: 1091px;
-    margin: 0 auto;
-    padding: 72px 0;
-}
-
-#section01 ul li:hover {
-    cursor: pointer;
-}
-
-#section01 ul li p {
-    margin-top: 30px;
-}
-
-#section01 ul li span {
-    color: #666666;
-}
-
-/* section01 End */
 
 #section02 {
     width: 1903px;

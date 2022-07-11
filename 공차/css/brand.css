@@ -13,6 +13,46 @@
 
 #section02 .section02_list .top_brand_list {
     margin-bottom: 90px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+
+#section02 .section02_list .top_brand_list.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#section02 .section02_list .top_brand_list img{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#section02 .section02_list .top_brand_list img.on {
+    transform: rotate(1turn);
+    opacity: 1;
+}
+
+#section02 .section02_list .bottom_brand_list {
+    margin-bottom: 90px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+
+#section02 .section02_list .bottom_brand_list.on {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#section02 .section02_list .bottom_brand_list img{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#section02 .section02_list .bottom_brand_list img.on {
+    transform: rotate(1turn);
+    opacity: 1;
 }
 
 #section02 .section02_list .brand_list li {
@@ -39,4 +79,12 @@
 
 #section02 .brand_sub {
     margin-bottom: 100px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+
+#section02 .brand_sub.on {
+    opacity: 1;
+    transform: translateX(0);
 }
